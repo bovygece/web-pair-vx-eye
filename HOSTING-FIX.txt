@@ -1,0 +1,1 @@
+Hosting fix: @whiskeysockets/baileys was changed from 7.0.0-rc.9 to 7.0.0-rc11 because rc9 fetched libsignal from GitHub, which this hosting environment blocks. rc11 moved libsignal to the npm registry.

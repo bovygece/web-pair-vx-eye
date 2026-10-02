@@ -1,0 +1,8 @@
+Railway hosting fix
+
+1. The HTTP server now starts immediately on Railway's PORT before WhatsApp,
+   database, plugins, and Telegram initialization. This prevents Railway's
+   health check from timing out while the bot is connecting.
+2. Added railway.toml with Dockerfile build, `node runner.js` start command,
+   `/` health check, and restart settings.
+3. Existing bot commands/features were not intentionally changed.

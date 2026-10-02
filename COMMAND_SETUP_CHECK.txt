@@ -1,0 +1,21 @@
+MIKU MD COMMAND SETUP CHECK
+
+Requested commands are registered through lib/plugins.js and exposed in plugins/menu.js.
+
+OWNER:
+setgoodbyetype setownertype setwelcometype swgc swgcall swgcv2 swgcv2all anticall
+
+SEARCH:
+playch searchthatsong yts play3
+
+GROUP:
+antibot antihidetag antijudol antispam antiremove antiphising antitoxic jadwalgroup notifopengroup setppgc setintro getpp delppgc
+
+PANEL:
+listadminv1 listadminv2 listadminv3 listadminv4 listadminv5
+
+Important runtime fixes in this build:
+- Owner/group commands are not blocked by the global private/public mode gate.
+- Menu explicitly preserves all requested command names.
+- anticall reads the same setting key written by the anticall command.
+- All JavaScript files pass node --check.

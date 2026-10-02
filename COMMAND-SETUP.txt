@@ -1,0 +1,54 @@
+MIKU MD - REQUESTED COMMANDS SETUP
+
+Requested commands integrated:
+1. setgoodbyetype
+2. setownertype
+3. setwelcometype
+4. swgc
+5. swgcall
+6. swgcv2
+7. swgcv2all
+8. playch
+9. searchthatsong
+10. yts
+11. play3
+12. antibot
+13. antihidetag
+14. antijudol
+15. antispam
+16. antiremove
+17. antiphising
+18. antitoxic
+19. jadwalgroup
+20. listadmin (v1-v5)
+21. notifopengroup
+22. setppgc
+23. setintro
+24. getpp
+25. delppgc
+26. anticall
+
+Important fixes:
+- Fixed the legacy compatibility bridge. The old bridge referenced `sock` at module top-level, which caused command plugin imports to fail at startup.
+- Converted requested commands to the Miku Module loader so they are registered and dispatched by the Miku runtime.
+- Fixed source import paths from the original bot architecture to Miku's runtime.
+- Fixed swgcv2all's missing `db` parameter.
+- Fixed setownertype so it stores `ownerType` and its button IDs call setownertype.
+- Added the missing listadmin v1-v5 registrations.
+- Disabled conflicting legacy registrations for antibot, anticall and getpp so the requested implementations are the active command handlers.
+- Added protection enforcement bridge for AntiBot, AntiHidetag, AntiJudol, AntiPhising, AntiSpam and AntiToxic.
+- Existing AntiRemove event path remains enabled and reads the per-group antiremove setting.
+- Added group schedule runner for jadwalgroup and notifopengroup.
+- Welcome/Goodbye type settings are connected to the group participant event handler.
+- Added @napi-rs/canvas dependency required by play3 and copied the required status/welcome video assets.
+
+Configuration-dependent commands:
+- listadminv1-v5 require Pterodactyl server domain/API key. They can be set in config.pterodactyl.server1..server5 or PTERO_SERVER1_DOMAIN / PTERO_SERVER1_APIKEY (and so on).
+- playch needs a channel ID via config.saluran.id or its --idch option.
+
+Install on hosting:
+1. Extract/upload this project.
+2. Run: npm install
+3. Start with: npm start
+
+The command files are in /plugins and are registered by the Miku loader.

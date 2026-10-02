@@ -1,0 +1,34 @@
+{
+  "_help": [
+    "Sirf WELCOME ke alag-alag video yahan URL se daalo.",
+    "Har slot ke 'url' me direct .mp4 link daalo. Naya member judega to inme se EK RANDOM video jayega.",
+    "Aur video chahiye to ek slot line copy karke slot number badha do (6, 7, 8 ... 25). Har line ke baad comma, sirf aakhri line pe nahi.",
+    "MENU ka video yahan nahi - WhatsApp se video par reply karke .setmenuvideo bhejo.",
+    "mode: 'random' = har baar random, 'sequential' = ek ke baad ek."
+  ],
+  "welcome": {
+    "mode": "random",
+    "slots": [
+      { "slot": 1, "url": "https://files.catbox.moe/8iwzzp.mp4" },
+      { "slot": 2, "url": "https://files.catbox.moe/8t70j8.mp4" },
+      { "slot": 3, "url": "https://files.catbox.moe/07hzxg.mp4" },
+      { "slot": 4, "url": "https://files.catbox.moe/wx4ypc.mp4" },
+      { "slot": 5, "url": "https://files.catbox.moe/gng7ch.mp4" },
+      { "slot": 6, "url": "https://files.catbox.moe/8adybw.mp4" },
+      { "slot": 7, "url": "https://files.catbox.moe/ip9z0f.mp4" },
+      { "slot": 8, "url": "https://files.catbox.moe/bol8ye.mp4" },
+      { "slot": 9, "url": "https://files.catbox.moe/uailwu.mp4" },
+      { "slot": 10, "url": "https://files.catbox.moe/dhqps7.mp4" },
+      { "slot": 11, "url": "https://files.catbox.moe/rormzr.mp4" },
+      { "slot": 12, "url": "https://files.catbox.moe/27bmrx.mp4" },
+      { "slot": 13, "url": "https://files.catbox.moe/qhooii.mp4" },
+      { "slot": 14, "url": "https://files.catbox.moe/lkgws8.mp4" },
+      { "slot": 15, "url": "https://files.catbox.moe/i0xzdq.mp4" },
+      { "slot": 16, "url": "https://files.catbox.moe/wk1neu.mp4" },
+      { "slot": 17, "url": "https://files.catbox.moe/fon87f.mp4" },
+      { "slot": 18, "url": "https://files.catbox.moe/v7pakm.mp4" },
+      { "slot": 19, "url": "https://files.catbox.moe/fa98s1.mp4" },
+      { "slot": 20, "url": "https://files.catbox.moe/9ryxbc.mp4" }
+    ]
+  }
+}

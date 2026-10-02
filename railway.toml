@@ -1,0 +1,11 @@
+# Railway deployment configuration
+# The app listens on Railway's injected PORT and exposes / as a health check.
+[build]
+builder = "DOCKERFILE"
+
+[deploy]
+startCommand = "node runner.js"
+healthcheckPath = "/"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
